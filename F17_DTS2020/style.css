@@ -1,130 +1,160 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
-  font-family: Montserrat;
-  font-weight: normal;
-  width: 100%;
+    font-family: Montserrat;
+    font-weight: normal;
+    width: 100%;
 }
 
 .header {
-  height: 80px;
-  background: #576574;
+    width: 100%;
+    height: 80px;
+    background: #576574;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
+
 .header .logo {
-  float: left;
-  margin: 20px 0 0 20px;
-  font-family: "Lobster", cursive;
-  color: white;
+    float: left;
+    margin: 20px 0 0 20px;
+    font-family: "Lobster", cursive;
+    color: white;
 }
+
 .header .container {
-  float: right;
-  display: flex;
-  align-items: center;
+    float: right;
+    display: flex;
+    align-items: center;
 }
+
 .header .container a {
-  top: 30px;
-  padding: 10px 10px;
-  margin: 20px 5px;
-  text-transform: uppercase;
-  color: #ddd;
-  transition: 0.3s linear;
-  border-radius: 4px;
-  font-size: 15px;
+    top: 30px;
+    padding: 10px 10px;
+    margin: 20px 5px;
+    text-transform: uppercase;
+    color: #ddd;
+    transition: 0.3s linear;
+    border-radius: 4px;
+    font-size: 15px;
 }
+
 .header .container a:nth-child(3) {
-  margin-right: 30px;
+    margin-right: 30px;
 }
+
 .header a:hover {
-  background: white;
-  transform: scale(1.1);
+    background: white;
+    transform: scale(1.1);
 }
+
 .header i {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .main .section1 {
-  height: 500px;
-  background-image: url("./images/tes2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-  text-align: center;
+    height: 500px;
+    background-image: url("./images/tes2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+
 .main .section1 .f17 {
-  font-size: 70px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  padding: 40px 15px 0px 15px;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 40px 15px 0px 15px;
 }
+
 .main .section1 .section1-btn {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 .main .section1 a {
-  padding: 20px 10px;
-  background: white;
-  opacity: 0.5;
-  border-radius: 15px;
-  text-decoration: none;
+    padding: 20px 10px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 15px;
+    text-decoration: none;
 }
+
 .main h1 {
-  text-align: center;
+    text-align: center;
 }
+
 .main .section2 {
-  position: relative;
-  right: 20px;
-  height: 900px;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    right: 20px;
+    height: 900px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .main .section2 .card-container {
-  font-family: Montserrat;
-  overflow: hidden;
-  width: 300px;
-  height: 400px;
-  background: #c8d6e5;
-  margin: 10px 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: Montserrat;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    background: #c8d6e5;
+    margin: 10px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .main .section2 .card-container .name {
-  margin-top: 5px;
-  margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 .main .section2 .card-container .img-back {
-  background: #576574;
+    background: #576574;
 }
+
 .main .section2 .card-container img {
-  border-radius: 50%;
-  width: 200px;
-  height: 180px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    border-radius: 50%;
+    width: 200px;
+    height: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
 .main .section2 .card-container .social {
-  margin-top: 13px;
+    margin-top: 13px;
 }
+
 .main .section2 .card-container .social .fab {
-  font-size: 30px;
-  color: #2C3A47;
-  padding: 0 10px;
+    font-size: 30px;
+    color: #2C3A47;
+    padding: 0 10px;
 }
+
 .main .section2 .card-container .social .fab:hover {
-  color: #00d2d3;
+    color: #00d2d3;
 }
 
 .footer {
-  width: 100%;
-  height: 200px;
-  background: #30336b;
+    width: 100%;
+    height: 200px;
+    background: #30336b;
 }
+
 
 /*# sourceMappingURL=style.css.map */
