@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  /*max-width: 1170px;*/
   padding: 0 15px;
 }
 
@@ -105,18 +105,24 @@ body {
   font-family: Montserrat;
   overflow: hidden;
   width: 300px;
-  height: 400px;
-  background: #c8d6e5;
+  height: 430px;
+  background: #ecf0f1;
   margin: 10px 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .main .section2 .card-container .name {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+
+.main .section2 .card-container .kota {
+  font-size: 15px;
+  font-style: italic;
+}
+
 .main .section2 .card-container .img-back {
-  background: #576574;
+  background: #95a5a6;
 }
 .main .section2 .card-container img {
   border-radius: 50%;
@@ -132,6 +138,14 @@ body {
   font-size: 30px;
   color: #2C3A47;
   padding: 0 10px;
+}
+
+.card-container-body {
+  height: 85%;
+}
+
+.card-container-footer {
+  height: 15%;
 }
 
 .facebook:hover {
@@ -212,8 +226,10 @@ body {
   box-shadow: 0px 7px #27ae60;
 }
 
-.footer img {
-  width: 125px;
+.footer {
+  background-color: #95a5a6;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .footer p {
@@ -221,10 +237,18 @@ body {
   font-size: 12px;
 }
 
-.footer {
-  background-color: #c8d6e5;
-  padding-top: 30px;
-  padding-bottom: 20px;
+.footer .left-logo {
+  float: left;
+  width: 25%;
+}
+
+.footer .left-logo img {
+  height: 50px;
+}
+
+.footer .right-logo {
+  width: 100%; 
+  text-align: right;
 }
 
 .footer-logo {
