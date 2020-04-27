@@ -83,7 +83,7 @@ body {
   text-align: center;
   color: white;
   font-weight: bold;
-  padding: 180px 15px 0px 15px;
+  padding: 150px 15px 0px 15px;
   margin-bottom: 50px;
 }
 .main .section1 .section1-btn {
@@ -96,7 +96,6 @@ body {
 .main .section2 {
   position: relative;
   overflow: auto;
-  height: 900px;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -239,10 +238,12 @@ body {
   .main .section1 .f17 {
     font-size: 30px;
   }
+
 }
 
 @media (max-width: 670px) {
   .header .menu-toggle-btn {
+    margin-right: 5%;
     display: block !important;
   }
   .header .container {
