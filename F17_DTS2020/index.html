@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <title>F17 - DTS20</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/0cf53619b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="header">
         <h1 class="logo">F17 - DTS20</h1>
+        <i class="menu-toggle-btn fas fa-bars"></i>
         <div class="container">
-
-            <a href="#"><i class="fas fa-home"></i>home</a>
+            
+            <a href="#"><i class="fas fa-home home"></i>home</a>
             <a href="#"><i class="fas fa-align-left about"></i>about</a>
+            <a href="#"><i class="fas fa-user about"></i>Service</a>
             <a href="#"><i class="fas fa-headset contact"></i>contact</a>
+
         </div>
     </div>
     <div class="main">
@@ -40,7 +44,7 @@
             <div class="card-container">
                 <div class="img-back"><img src="images/mfa.jpg" alt="mfa"></div>
                 <h3 class="name">M Fadhillah Azmy</h3>
-                <h3><span style="font-style: italic; font-size: 15px;">Medan, Sumut</span><br>Ingin belajar fudamental Web Development.</h3>
+                <h3><span style="font-style: italic; font-size: 15px;">Medan, Sumut</span><br>Ingin belajar fudamental Web Development baik di bidang Front-End dan Back-End.</h3>
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -81,13 +85,23 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="right">
 
-        </div>
-        <div class="left"></div>
     </div>
+    <div class="email">
+           
+            <div class="sub-container">
+                 <h3 style="color:white;">Subscribe to Our Newsletter</h3>
+                <input type="text" placeholder="Your Email">
+
+            </div>
+            <div class="sub-btn"><a href="#">Subscribe</a></div>
+        </div>
+   <script>
+        $(".menu-toggle-btn").click(function(){
+            $(this).toggleClass(".fa fa-times");
+            $(".container").toggleClass("active");
+        })
+    </script>
 </body>
 
 </html>
