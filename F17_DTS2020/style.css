@@ -14,6 +14,11 @@ body {
   max-width: 1366px;
 }
 
+.container {
+  /*max-width: 1170px;*/
+  padding: 0 15px;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -21,12 +26,15 @@ body {
   background: black;
   z-index: 10;
 }
-.header .logo {
+
+.logo {
   float: left;
-  margin: 20px 0 0 20px;
-  font-family: "Lobster", cursive;
+  margin: 20px 0 0 25px;
+  font-family: 'Montserrat', Lobster, cursive;
   color: white;
+  font-weight: bold;
 }
+
 .header .container {
   float: right;
   display: flex;
@@ -71,29 +79,23 @@ body {
   text-align: center;
 }
 .main .section1 .f17 {
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   color: white;
   font-weight: bold;
-  padding: 90px 15px 0px 15px;
+  padding: 150px 15px 0px 15px;
+  margin-bottom: 50px;
 }
 .main .section1 .section1-btn {
   margin-top: 50px;
 }
-.main .section1 a {
-  padding: 20px 10px;
-  background: white;
-  opacity: 0.5;
-  border-radius: 15px;
-  text-decoration: none;
-}
+
 .main h1 {
   text-align: center;
 }
 .main .section2 {
   position: relative;
   overflow: auto;
-  height: 900px;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -103,18 +105,24 @@ body {
   font-family: Montserrat;
   overflow: hidden;
   width: 300px;
-  height: 400px;
-  background: #c8d6e5;
+  height: 430px;
+  background: #ecf0f1;
   margin: 10px 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .main .section2 .card-container .name {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+
+.main .section2 .card-container .kota {
+  font-size: 15px;
+  font-style: italic;
+}
+
 .main .section2 .card-container .img-back {
-  background: #576574;
+  background: #95a5a6;
 }
 .main .section2 .card-container img {
   border-radius: 50%;
@@ -126,13 +134,33 @@ body {
 .main .section2 .card-container .social {
   margin-top: 13px;
 }
-.main .section2 .card-container .social .fab {
+.main .section2 .card-container .social, .facebook, .twitter, .instagram {
   font-size: 30px;
   color: #2C3A47;
   padding: 0 10px;
 }
-.main .section2 .card-container .social .fab:hover {
-  color: #00d2d3;
+
+.card-container-body {
+  height: 85%;
+}
+
+.card-container-footer {
+  height: 15%;
+}
+
+.facebook:hover {
+  cursor: pointer;
+  color: #2980b9;
+}
+
+.twitter:hover {
+  cursor: pointer;
+  color: #3498db;
+}
+
+.instagram:hover {
+  cursor: pointer;
+  color: #8e44ad;
 }
 
 .email {
@@ -146,13 +174,13 @@ body {
   flex-flow: row wrap;
 }
 .email .sub-container h3 {
-  text-transform: center;
+  color: white;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 7px;
 }
 .email .sub-container input {
-  padding: 15px;
-  margin-left: 7px;
+  padding: 13px;
 }
 .email .sub-btn {
   background: orange;
@@ -165,13 +193,81 @@ body {
   margin-left: 10px;
 }
 
-@media (max-width: 960px) {
-  .main .section1 .f17 {
-    font-size: 50px;
-  }
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 1;
+  border-radius: 4px;
+  text-align: center;
 }
-@media (max-width: 550px) {
+
+.btn:active {
+  position: relative;
+  top: 4px;
+  box-shadow: none;
+}
+
+.btn-default {
+  color: black;
+  background-color: #bdc3c7;
+  box-shadow: 0px 6px #7f8c8d;
+}
+
+.btn-wortel {
+  color: white;
+  background-color: #e67e22;
+  box-shadow: 0px 6px #d35400;
+}
+
+.btn-spinach {
+  color: white;
+  background-color: #2ecc71;
+  box-shadow: 0px 7px #27ae60;
+}
+
+.footer {
+  background-color: #95a5a6;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+.footer .left-logo {
+  float: left;
+  width: 25%;
+}
+
+.footer .left-logo img {
+  height: 50px;
+}
+
+.footer .right-logo {
+  width: 100%; 
+  text-align: right;
+}
+
+.footer-logo {
+  font-family: 'Montserrat', Lobster, cursive;
+  color: black;
+  font-weight: bold;
+}
+
+/* responsive css */
+@media (max-width: 1000px) {
+  .main .section1 .f17 {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 670px) {
   .header .menu-toggle-btn {
+    margin-right: 5%;
     display: block !important;
   }
   .header .container {
@@ -195,7 +291,7 @@ body {
   }
 
   .main .section1 .f17 {
-    font-size: 45px;
+    font-size: 25px;
   }
 
   .email {
